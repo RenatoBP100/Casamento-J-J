@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="/css/Reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Casamento J&J</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header-logo">
+        <h1>J&J</h1>
+        <p>June 23rd, 2025</p>
+    </div>
+
+    <nav class="header-nav">
+        <a href="#">HOME</a>
+        <a href="#">OUR STORY</a>
+        <a href="#">DETAILS</a>
+        <a href="#">RSVP</a>
+    </nav>
+</header>
+    <main>
+<section class="banner">
+    <h2>JENNY & JASON</h2>
+
+    <div class="imagem">
+        <img src="./src/meric-dagli-7NBO76G5JsE-unsplash 1.png" alt="Sakura">
+
+        <div class="texto">
+            <p>
+                WITH LOVE AND GRATITUDE, WE INVITE YOU
+                TO SHARE IN THE JOY OF OUR WEDDING DAY
+            </p>
+        </div>
+    </div>
+</section>
+<section class="Galeria">
+
+            <img src="src/tobias-flyckt-opcnK9Oh0fE-unsplash 2.png" alt="casal de mãos dadas">
+            <img src="src/roonz-nl-vjDbHCjHlEY-unsplash 1.png" alt="Flor amarela">
+            <img src="src/artsy-vibes-0FCHGRqHAjk-unsplash 1.png" alt="aneis de casamento">
+            <img src="src/ksenia-makagonova-LuK-MuZ-yf0-unsplash 1.png" alt="Folha em cima de diario"> 
+
+</section>
+<section class="Carrocel">
+  <input type="radio" name="btn-radio" id="radio-1" checked>
+  <input type="radio" name="btn-radio" id="radio-2">
+  <input type="radio" name="btn-radio" id="radio-3">
+  <input type="radio" name="btn-radio" id="radio-4">
+
+  <div class="Carrocel-content">
+    <div class="Carrocel-box primeiro">
+      <img src="/src/marc-zimmer-kEP-zO-w4nE-unsplash 1.png" alt="Castelo">
+    </div>
+
+    <div class="Carrocel-box">
+      <img src="/src/banquete.jpg" alt="Jantar">
+    </div>
+
+    <div class="Carrocel-box">
+      <img src="src/asthetic.jpg" alt="Casal">
+    </div>
+
+    <div class="Carrocel-box">
+      <img src="/src/Beijo.jpg" alt="Beijo">
+    </div>
+  </div>
+
+  <div class="nav-manual">
+    <label for="radio-1" class="manual-btn"></label>
+    <label for="radio-2" class="manual-btn"></label>
+    <label for="radio-3" class="manual-btn"></label>
+    <label for="radio-4" class="manual-btn"></label>
+  </div>
+</section>
+
+    </main>
+    <footer>
+        <p>Saturday</p>
+        <p>September</p>
+        <p class="data">2025</p>
+    </footer>
+    <script>
+let contador = 1;
+
+setInterval(() => {
+  contador++;
+
+  if (contador > 4) {
+    contador = 1;
+  }
+
+  document.getElementById(`radio-${contador}`).checked = true;
+}, 9000);
+</script>
+</body>
+</html>
